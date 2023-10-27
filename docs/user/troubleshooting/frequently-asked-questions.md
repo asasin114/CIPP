@@ -49,7 +49,7 @@ Check the MFA Troubleshooting section in the Troubleshooting page for more infor
 
 <details>
 
-<summary>My usernames or sites are GUIDs?</summary>
+<summary>My usernames or sites are GUIDs or blank?</summary>
 
 Please see the standard "Enable Usernames instead of pseudo anonymised names in reports" [here](https://cipp.app/docs/user/usingcipp/tenantadministration/standards/#meet-the-standards)
 
@@ -117,8 +117,6 @@ A 500 error is a generic server error. In CIPP this can hide many different issu
 
 * You don't have valid licensing for the feature you're trying to use.
 * The CIPP-API function app isn't responding correctly, is starting up or is down.
-
-If you're still having issues, after checking licensing and that your function app is running correctly, please report them in `#cipp-issues` on the [CIPP Discord](https://discord.gg/cyberdrain).
 
 </details>
 
