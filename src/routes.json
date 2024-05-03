@@ -691,6 +691,18 @@
     "allowedRoles": ["admin", "editor", "readonly"]
   },
   {
+    "path": "/rooms/management/list-rooms",
+    "name": "Rooms",
+    "component": "views/rooms/management/ListRooms",
+    "allowedRoles": ["admin", "editor", "readonly"]
+  },
+  {
+    "path": "/rooms/management/room-lists",
+    "name": "Room Lists",
+    "component": "views/rooms/management/ListRoomLists",
+    "allowedRoles": ["admin", "editor", "readonly"]
+  },
+  {
     "path": "/email/tools/mailbox-restore-wizard",
     "name": "Mailbox Restore Wizard",
     "component": "views/email-exchange/tools/MailboxRestoreWizard",
@@ -766,6 +778,12 @@
     "name": "List Quarantine",
     "path": "/email/administration/Quarantine",
     "component": "views/email-exchange/administration/QuarantineList",
+    "allowedRoles": ["admin", "editor", "readonly"]
+  },
+  {
+    "name": "List Tenant Allow/Block Lists",
+    "path": "/email/administration/tenant-allow-block-lists",
+    "component": "views/email-exchange/administration/ListTenantAllowBlockList",
     "allowedRoles": ["admin", "editor", "readonly"]
   },
   {

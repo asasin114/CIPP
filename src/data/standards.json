@@ -308,7 +308,8 @@
       {
         "type": "number",
         "name": "standards.NudgeMFA.snoozeDurationInDays",
-        "label": "Number of days to allow users to skip registering Authenticator (0-14, default is 1)"
+        "label": "Number of days to allow users to skip registering Authenticator (0-14, default is 1)",
+        "default": 1
       }
     ],
     "label": "Sets the state for the request to setup Authenticator",
@@ -487,6 +488,36 @@
     "impactColour": "info"
   },
   {
+    "name": "standards.GlobalQuarantineNotifications",
+    "cat": "Exchange Standards",
+    "tag": ["lowimpact"],
+    "helpText": "Sets the Global Quarantine Notification Interval to the selected value. Determines how often the quarantine notification is sent to users.",
+    "addedComponent": [
+      {
+        "type": "Select",
+        "label": "Select value",
+        "name": "standards.GlobalQuarantineNotifications.NotificationInterval",
+        "values": [
+          {
+            "label": "4 hours",
+            "value": "04:00:00"
+          },
+          {
+            "label": "1 day/Daily",
+            "value": "1.00:00:00"
+          },
+          {
+            "label": "7 days/Weekly",
+            "value": "7.00:00:00"
+          }
+        ]
+      }
+    ],
+    "label": "Set Global Quarantine Notification Interval",
+    "impact": "Low Impact",
+    "impactColour": "info"
+  },
+  {
     "name": "standards.DisableTNEF",
     "cat": "Exchange Standards",
     "tag": ["lowimpact"],
@@ -578,7 +609,8 @@
         "type": "number",
         "name": "standards.EnableMailTips.MailTipsLargeAudienceThreshold",
         "label": "Number of recipients to trigger the large audience MailTip (Default is 25)",
-        "placeholder": "Enter a profile name"
+        "placeholder": "Enter a profile name",
+        "default": 25
       }
     ],
     "label": "Enable all MailTips",
@@ -634,12 +666,14 @@
       {
         "type": "number",
         "name": "standards.SendReceiveLimitTenant.SendLimit",
-        "label": "Send limit in MB (Default is 35)"
+        "label": "Send limit in MB (Default is 35)",
+        "default": 35
       },
       {
         "type": "number",
         "name": "standards.SendReceiveLimitTenant.ReceiveLimit",
-        "label": "Receive Limit in MB (Default is 36)"
+        "label": "Receive Limit in MB (Default is 36)",
+        "default": 36
       }
     ],
     "label": "Set send/receive size limits",
